@@ -16,7 +16,7 @@ pipeline {
         stage('Publish JSON Report') {
             steps {
                 // Archive the JSON reports from target/jsonReports
-                archiveArtifacts artifacts: "$WORKSPACE/Dockermaven/target/jsonReports/*.json", allowEmptyArchive: true
+                archiveArtifacts artifacts: "C:/Users/mail2/.jenkins/workspace/Dockermaven/target/jsonReports/*.json", allowEmptyArchive: true
             }
         }
     }

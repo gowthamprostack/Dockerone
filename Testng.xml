@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Cucumber Suite" parallel="tests" threads="10">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.webdriveruniversity.com/Contact-Us/contactus.html"/>
+        
+        <classes>
+            <class name="com.ge.testrunner.TestRunner"/>
+        </classes>
+    </test>
+
+   
+    </suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Cucumber Suite]">
+  <test thread-count="5" parallel="tests" name="Chrome Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.webdriveruniversity.com/Contact-Us/contactus.html"/>
+    <classes>
+      <class name="com.ge.testrunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="10 15"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.ge.testrunner.TestRunner -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->

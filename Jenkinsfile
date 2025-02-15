@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run your build commands here (e.g., Maven, Gradle)
-                bat 'mvn clean install'  // For Windows
+                bat 'buildone.bat'  // For Windows
             }
         }
         stage('Publish JSON Report') {
@@ -22,7 +22,8 @@ pipeline {
     }
     post {
         always {
-            // Additional actions (if necessary) after build
+            // Example action for the always block
+            echo 'This will run always after the pipeline completes.'
         }
     }
 }
